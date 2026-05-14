@@ -4,15 +4,15 @@ import {
   Instagram, Ticket, Bed, Bus, Utensils, PartyPopper, ChevronRight, AlertTriangle } from
 'lucide-react';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion';
-import heroImg from '@/assets/hero-indonesia.jpg';
-import nusaLembonganImg from '@/assets/nusa-lembongan.jpg';
-import giliTImg from '@/assets/gili-t.jpg';
-import kutaLombokImg from '@/assets/kuta-lombok.jpg';
+import heroImg from '@/assets/hero-cambodia.jpg';
+import siemReapImg from '@/assets/siem-reap.jpg';
+import kohRongImg from '@/assets/koh-rong.jpg';
+import kohSdachImg from '@/assets/koh-sdach.jpg';
 import logoImg from '@/assets/mad-monkey-logo.png';
 import monkeyIcon from '@/assets/mad-monkey-icon.png';
 import vibeBoatpartyImg from '@/assets/vibe-boatparty.jpg';
-import vibeMantarayImg from '@/assets/vibe-mantaray.jpg';
-import vibeAtvImg from '@/assets/vibe-atv.jpg';
+import vibeFriendsImg from '@/assets/vibe-friends.jpg';
+import vibeSunsetImg from '@/assets/vibe-sunset.jpg';
 
 const TikTokIcon = ({ className = "w-4 h-4" }: {className?: string;}) =>
 <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -38,54 +38,55 @@ export default function Index() {
 
   const locations = [
     {
-      name: 'Uluwatu',
-      daysLabel: 'Days 1-4',
-      duration: '4 Days (Sep 6-9)',
+      name: 'Siem Reap',
+      daysLabel: 'Days 1-3',
+      duration: '3 Days (Nov 2-4)',
+      img: siemReapImg,
+      desc: "Your adventure starts in Siem Reap. Welcome meals, floating villages, temple tours, and legendary Mad Monkey pool parties.",
+      highlights: [
+        'Day 1 (02/11) — Arrive at Siem Reap Mad Monkey and join the Welcome meal!',
+        'Day 2 (03/11) — Floating Village Tour (2PM-7:30PM) + Bingo for a Cause (8PM)',
+        'Day 3 (04/11) — Angkor Wat Tour (4:30AM-12:30PM), then join the Pool BBQ (6PM-8PM)',
+      ],
+    },
+    {
+      name: 'Kampot',
+      daysLabel: 'Days 4-7',
+      duration: '4 Days (Nov 5-8)',
       img: heroImg,
-      desc: "Your adventure starts at Mad Monkey Uluwatu. Welcome sunsets, surf lessons, sunrise treks, and live DJ nights to set the tone.",
+      desc: "Travel to Kampot for laid-back riverside vibes. TBF details to be confirmed — expect great times with the Mad Monkey crew.",
       highlights: [
-        'Day 1 (06/09) — Arrive at DPS Airport. Transfer to Mad Monkey Uluwatu. Welcome Sunset (5PM-7:30PM) at Panorama Point',
-        'Day 2 (07/09) — Surf Lesson (9AM-11AM) + Fire Show',
-        'Day 3 (08/09) — Mt Batur Sunrise Trekking (1:30AM-11AM). Sauna, hot tub & ice baths',
-        'Day 4 (09/09) — Live DJ + Free Flow (8PM-11PM)',
+        'Day 4 (05/11) — Siem Reap to Kampot travel day',
+        'Day 5 (06/11) — Kampot TBF',
+        'Day 6 (07/11) — Kampot TBF',
+        'Day 7 (08/11) — Kampot TBF',
       ],
     },
     {
-      name: 'Nusa Lembongan',
-      daysLabel: 'Days 5-6',
-      duration: '2 Days (Sep 10-11)',
-      img: nusaLembonganImg,
-      desc: "Hop on a fast boat to the island paradise of Nusa Lembongan. Island hopping, pool parties, and turquoise waters.",
+      name: 'Koh Rong',
+      daysLabel: 'Days 8-12',
+      duration: '5 Days (Nov 9-13)',
+      img: kohRongImg,
+      desc: "Island paradise. Crystal-clear waters, beach Olympics, Caribbean dinners, and the legendary Nestival beach jungle rave.",
       highlights: [
-        'Day 5 (10/09) — Taxi to Sanur, 30-min fast boat to Mad Monkey Nusa Lembongan. Ice baths, sauna, gym & luxury pool',
-        'Day 6 (11/09) — Island Hopping around Nusa Penida (8:30AM-5PM) + Mad Monkey Pool Party (6PM-10PM)',
+        'Day 8 (09/11) — Kampot to Sihanoukville (7AM) and transfer to the Pier. BuvaSea ferry (8:30AM) to Koh Rong Longset Pier. Walk to Mad Monkey. Bongos Bingo (9-10:30PM)',
+        'Day 9 (10/11) — Free day to explore Koh Rong or join Volleyball Tournament (4PM)',
+        'Day 10 (11/11) — Explore beautiful Koh Rong and join the Caribbean Dinner (7PM-8PM)',
+        'Day 11 (12/11) — Beach Olympics at MM (2:30PM-4:30PM) + Nestival (7PM) — beach/jungle rave until sunrise',
+        'Day 12 (13/11) — Enjoy a day of relaxation on the beach, BBQ on the beach and fire show',
       ],
     },
     {
-      name: 'Gili Trawangan',
-      daysLabel: 'Days 7-9',
-      duration: '3 Days (Sep 12-14)',
-      img: giliTImg,
-      desc: "The legendary Gili T. Boat parties, snorkelling, beach volleyball, and a free day to explore.",
+      name: 'Koh Sdach',
+      daysLabel: 'Days 13-16',
+      duration: '4 Days (Nov 14-17)',
+      img: kohSdachImg,
+      desc: "Escape to the untouched Koh Sdach. Spa amenities, island loops, sunset cruises, and a heartfelt farewell before heading home.",
       highlights: [
-        'Day 7 (12/09) — Early fast boat to Gili T. Mad Monkey Boat Party (2PM-6PM) + Unlimited BBQ & Drinks',
-        'Day 8 (13/09) — Monkey Sea Monkey Do snorkelling tour (10:30AM-4PM) + Beach Volleyball Tournament & Live DJ (3PM-7PM)',
-        'Day 9 (14/09) — Free day mid-trip to explore Gili T',
-      ],
-    },
-    {
-      name: 'Kuta Lombok',
-      daysLabel: 'Days 10-15',
-      duration: '6 Days (Sep 15-21)',
-      img: kutaLombokImg,
-      desc: "Head to Lombok for the grand finale — waterfalls, surf lessons, BBQ free-flows, and a chilled farewell.",
-      highlights: [
-        'Day 10 (15/09) — Short boat to Lombok mainland, shuttle to Mad Monkey Kuta Lombok',
-        'Day 11 (16/09) — Lombok Signature Waterfall Tour (10AM-5PM)',
-        'Day 12 (17/09) — Relax and explore Kuta',
-        'Day 13 (19/09) — Surf lesson (9AM-12PM)',
-        'Day 14 (20/09) — Surf lesson (9AM-12PM) + BBQ & Free Flow',
-        'Day 15 (21/09) — Recovery breakfast + 30-min shuttle to Lombok Airport (LOP)',
+        'Day 13 (14/11) — 1-hour boat to Koh Sdach Mad Monkey. Enjoy the spa amenities and join the Wellness Challenge. Koh Sdach Loop (4PM-6PM) — ride e-bikes around the island, have some beers, and enjoy sunset',
+        'Day 14 (15/11) — Sunset Boat Cruise (4PM-6:30PM) + Pub Quiz',
+        'Day 15 (16/11) — Kayak Hire on crystal clear water (anytime between 8AM-5PM, 1 hour rental). Farewell dinner ($10 F&B required)',
+        'Day 16 (17/11) — Free day and farewell back to the Mainland',
       ],
     },
   ];
@@ -100,7 +101,7 @@ export default function Index() {
           <div className="flex-shrink-0 flex items-center gap-3">
               <img src={logoImg} alt="Mad Monkey" className="h-8 w-auto" />
               <span className="text-brand-red text-xl font-bold">|</span>
-              <span className="text-foreground font-display font-black text-sm tracking-tight">WILL GEE</span>
+              <span className="text-foreground font-display font-black text-sm tracking-tight">JASMINE ROSTOCK</span>
             </div>
             <div className="hidden md:flex space-x-8 items-center font-semibold text-sm">
               <a href="#itinerary" className="text-muted-foreground hover:text-brand-red transition-colors">Itinerary</a>
@@ -118,7 +119,7 @@ export default function Index() {
       <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-brand-black/60 via-brand-black/40 to-brand-black/80 z-10" />
-          <img src={heroImg} alt="Indonesia islands adventure" className="w-full h-full object-cover" />
+          <img src={heroImg} alt="Cambodia adventure" className="w-full h-full object-cover" />
         </div>
         
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-primary-foreground">
@@ -127,20 +128,20 @@ export default function Index() {
           </div>
           
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-4 leading-[0.9] tracking-tight uppercase drop-shadow-xl font-display">
-              Indonesia <br className="hidden md:block" />
+              Cambodia <br className="hidden md:block" />
               <span className="text-brand-red">Takeover</span>
             </h1>
           
            <p className="text-4xl md:text-6xl font-black tracking-tight mb-6 font-display drop-shadow-xl text-primary-foreground">
-             SEP 6 - 21
+             NOV 2 - 17
            </p>
 
           <div className="flex justify-center gap-4 mb-8">
-            <a href="https://instagram.com/will.gee11" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 bg-primary-foreground/20 hover:bg-primary-foreground/30 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-medium transition-colors">
-              <Instagram size={16} /> @will.gee11
+            <a href="https://instagram.com/jasminrostock" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 bg-primary-foreground/20 hover:bg-primary-foreground/30 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-medium transition-colors">
+              <Instagram size={16} /> @jasminrostock
             </a>
-            <a href="https://tiktok.com/@willgeeeeee" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 bg-primary-foreground/20 hover:bg-primary-foreground/30 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-medium transition-colors">
-              <TikTokIcon /> @willgeeeeee
+            <a href="https://tiktok.com/@jasminrostock" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 bg-primary-foreground/20 hover:bg-primary-foreground/30 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-medium transition-colors">
+              <TikTokIcon /> @jasminrostock
             </a>
           </div>
 
@@ -167,8 +168,8 @@ export default function Index() {
             <span className="hidden sm:inline text-brand-red font-bold">•</span>
             <div className="flex items-center gap-2">
               <MapPin className="text-brand-red shrink-0" size={18} />
-               <span className="font-black">5 Locations</span>
-               <span className="text-muted-foreground">across Indonesia</span>
+               <span className="font-black">4 Locations</span>
+               <span className="text-muted-foreground">across Cambodia</span>
             </div>
           </div>
         </div>
@@ -179,7 +180,7 @@ export default function Index() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight mb-4 font-display">The <span className="text-brand-teal">Route</span></h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">15 days of islands, adventure, and incredible vibes across Indonesia's best spots.</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-medium">15 days of temples, islands, adventure, and incredible vibes across Cambodia's best spots.</p>
           </div>
 
           <div className="space-y-8">
@@ -229,8 +230,8 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
              { icon: <Bed className="text-brand-black mb-4" size={32} />, title: 'Stays', items: ['Mixed or Female shared dorms', 'Mad Monkey locations throughout', 'Island accommodation'] },
-             { icon: <Bus className="text-brand-black mb-4" size={32} />, title: 'Transport', items: ['All internal transport', 'Group vans between cities', 'Fast ferries to islands', 'Does NOT include airport arrival/departure'] },
-             { icon: <Utensils className="text-brand-black mb-4" size={32} />, title: 'Tours & Extras', items: ['ATV Adventure', 'Mad Monkey Boat Party', 'Manta Ray expedition', 'Group leader in every location', 'WhatsApp support group'] }].
+             { icon: <Bus className="text-brand-black mb-4" size={32} />, title: 'Transport', items: ['All internal transport', 'Group vans between cities', 'Ferries to islands', 'Does NOT include airport arrival/departure'] },
+             { icon: <Utensils className="text-brand-black mb-4" size={32} />, title: 'Tours & Extras', items: ['Floating Village Tour', 'Angkor Wat Tour', 'Bongos Bingo', 'Beach Olympics', 'Caribbean Dinner', 'Sunset Boat Cruise', 'Group leader in every location', 'WhatsApp support group'] }].
             map((card, i) =>
             <div key={i} className="bg-primary-foreground/5 border border-primary-foreground/10 p-6 rounded-2xl hover:bg-primary-foreground/10 transition-colors">
                 {card.icon}
@@ -257,13 +258,13 @@ export default function Index() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-              <img src={vibeBoatpartyImg} alt="Sunset boat party in Indonesia" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
+              <img src={vibeBoatpartyImg} alt="Sunset boat party" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-              <img src={vibeMantarayImg} alt="Snorkeling with manta rays" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
+              <img src={vibeFriendsImg} alt="Group of friends travelling" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-              <img src={vibeAtvImg} alt="ATV adventure through Bali rice terraces" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
+              <img src={vibeSunsetImg} alt="Tropical sunset" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
             </div>
           </div>
         </div>
@@ -308,9 +309,9 @@ export default function Index() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
              {[
-               { title: 'International Flights', desc: 'Flights to and from Indonesia' },
+               { title: 'International Flights', desc: 'Flights to and from Cambodia' },
                { title: 'Personal Spend', desc: 'Meals, drinks, and optional activities not listed in the itinerary' },
-               { title: 'Visas', desc: 'Tourist Visa (approx. $30–$35)' },
+               { title: 'Visas', desc: 'Cambodia Tourist Visa (check current requirements)' },
                { title: 'Travel Insurance', desc: 'Mandatory for all travellers' },
             ].map((item, i) => (
               <div key={i} className="bg-card border border-border rounded-2xl p-5">
@@ -330,15 +331,16 @@ export default function Index() {
           </div>
           <div className="space-y-4">
             {[
-              { step: '1', title: 'Pay Your Deposit', desc: 'Pay your £233.10 deposit via the booking link by 09/08/2026.' },
+              { step: '1', title: 'Pay Your Deposit', desc: 'Pay your £140 deposit via the booking link by 07/09/2026.' },
               { step: '2', title: 'Join the Crew', desc: "Once deposited, you'll be added to the private WhatsApp group for pre-trip banter and packing tips." },
-              { step: '3', title: 'Wait for the "GO"', desc: 'As soon as we hit 12 confirmed travellers (by 09/08), we\'ll blast the group chat to confirm the takeover is ON.' },
+              { step: '3', title: 'Wait for the "GO"', desc: 'As soon as we hit 12 confirmed travellers (by 07/09), we\'ll blast the group chat to confirm the takeover is ON.' },
               {
                 step: '4',
                 title: 'Pay Your Instalments',
                 rows: [
-                  { label: 'Instalment 1', amount: '£233.10', due: '23/08/2026' },
-                  { label: 'Instalment 2', amount: '£233.10', due: '30/08/2026' },
+                  { label: 'Instalment 1', amount: '£140', due: '21/09/2026' },
+                  { label: 'Instalment 2', amount: '£140', due: '05/10/2026' },
+                  { label: 'Instalment 3', amount: '£140', due: '19/10/2026' },
                 ],
                 footer: 'Total trip cost: £700',
               },
@@ -375,6 +377,12 @@ export default function Index() {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-6 bg-brand-yellow/10 border border-brand-yellow/30 rounded-2xl p-5 flex items-start gap-3">
+            <AlertTriangle className="text-brand-yellow shrink-0 mt-0.5" size={20} />
+            <p className="text-sm text-muted-foreground font-medium">
+              <span className="font-bold text-foreground">Important:</span> Anything after 8 weeks will only be a FULL Payment.
+            </p>
           </div>
         </div>
       </section>
@@ -416,8 +424,8 @@ export default function Index() {
               { q: "Can I skip activities if I want to relax?", a: "Absolutely. While group activities are included, you're free to opt out of anything and enjoy free time instead." },
               { q: "What if I get sick or injured?", a: "Travel insurance is mandatory. Hosts and local staff will assist you in accessing medical care if needed, but medical costs are your responsibility and must be covered by insurance." },
               { q: "Will there be WiFi?", a: "Yes — all Mad Monkey locations have WiFi, though speeds may vary depending on island location." },
-              { q: "Is there a payment plan available?", a: "Yes. You pay a £233.10 deposit by 09/08/2026, followed by two instalments of £233.10 — due 23/08/2026 and 30/08/2026. Total cost is £700. Missed payments may result in your spot being released." },
-              { q: "Is there a minimum number of travellers required?", a: "All trips require a minimum of 12 confirmed travellers to be officially confirmed. If this minimum is not met by the deposit deadline, the trip will be cancelled and all payments will be fully refunded." },
+              { q: "Is there a payment plan available?", a: "Yes. You pay a £140 deposit by 07/09/2026, followed by three instalments of £140 — due 21/09/2026, 05/10/2026, and 19/10/2026. Total cost is £700. Missed payments may result in your spot being released. Anything after 8 weeks will only be a FULL Payment." },
+              { q: "Is there a minimum number of travellers required?", a: "All trips require a minimum of 12 confirmed travellers to be officially confirmed. If this minimum is not met by 07/09/2026, the trip will be cancelled and all payments will be fully refunded." },
               { q: "What is the cancellation policy?", a: "If you cancel before the trip is confirmed, you'll receive a full refund of your deposit. If you cancel after the trip is confirmed, all payments are non-refundable. We strongly recommend travel insurance with 'Cancel for Any Reason' (CFAR) coverage." },
             ].map((faq, i) => (
               <AccordionItem key={i} value={`faq-${i}`} className="bg-card rounded-2xl border border-border px-6 overflow-hidden">
@@ -440,13 +448,13 @@ export default function Index() {
             <div className="flex items-center gap-3">
               <img src={logoImg} alt="Mad Monkey" className="h-8 w-auto" style={{ filter: 'drop-shadow(1px 0 0 white) drop-shadow(-1px 0 0 white) drop-shadow(0 1px 0 white) drop-shadow(0 -1px 0 white)' }} />
               <span className="text-brand-red text-xl font-bold">|</span>
-              <span className="text-primary-foreground font-display font-black text-sm tracking-tight">WILL GEE</span>
+              <span className="text-primary-foreground font-display font-black text-sm tracking-tight">JASMINE ROSTOCK</span>
             </div>
              <div className="flex gap-6">
-               <a href="https://instagram.com/will.gee11" target="_blank" rel="noreferrer" className="bg-primary-foreground/10 p-3 rounded-full hover:bg-brand-red transition-colors">
+               <a href="https://instagram.com/jasminrostock" target="_blank" rel="noreferrer" className="bg-primary-foreground/10 p-3 rounded-full hover:bg-brand-red transition-colors">
                  <Instagram size={24} />
                </a>
-               <a href="https://tiktok.com/@willgeeeeee" target="_blank" rel="noreferrer" className="bg-primary-foreground/10 p-3 rounded-full hover:bg-brand-red transition-colors">
+               <a href="https://tiktok.com/@jasminrostock" target="_blank" rel="noreferrer" className="bg-primary-foreground/10 p-3 rounded-full hover:bg-brand-red transition-colors">
                  <TikTokIcon className="w-6 h-6" />
                </a>
              </div>
