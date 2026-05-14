@@ -264,7 +264,7 @@ export default function Index() {
               <img src={vibeFriendsImg} alt="Group of friends travelling in Cambodia" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-              <img src={vibeSunsetImg} alt="Beach games and beer pong" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
+              <img src={vibeBeerPongImg} alt="Beach games and beer pong" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
             </div>
           </div>
         </div>
