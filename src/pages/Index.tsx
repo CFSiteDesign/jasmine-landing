@@ -258,7 +258,7 @@ export default function Index() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-              <img src={vibeBoatpartyImg} alt="Mad Monkey foam party" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
+              <img src={vibeFoamPartyImg} alt="Mad Monkey foam party" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
               <img src={vibeFriendsImg} alt="Group of friends travelling in Cambodia" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" loading="lazy" width={1024} height={768} />
