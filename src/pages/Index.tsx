@@ -10,9 +10,9 @@ import kohRongImg from '@/assets/koh-rong.jpg';
 import kohSdachImg from '@/assets/koh-sdach.jpg';
 import logoImg from '@/assets/mad-monkey-logo.png';
 import monkeyIcon from '@/assets/mad-monkey-icon.png';
-import vibeBoatpartyImg from '@/assets/vibe-boatparty.jpg';
+import vibeFoamPartyImg from '@/assets/vibe-foam-party.jpg';
 import vibeFriendsImg from '@/assets/vibe-friends.jpg';
-import vibeSunsetImg from '@/assets/vibe-sunset.jpg';
+import vibeBeerPongImg from '@/assets/vibe-beer-pong.jpg';
 
 const TikTokIcon = ({ className = "w-4 h-4" }: {className?: string;}) =>
 <svg className={className} viewBox="0 0 24 24" fill="currentColor">
@@ -231,7 +231,7 @@ export default function Index() {
             {[
              { icon: <Bed className="text-brand-black mb-4" size={32} />, title: 'Stays', items: ['Mixed or Female shared dorms', 'Mad Monkey locations throughout', 'Island accommodation'] },
              { icon: <Bus className="text-brand-black mb-4" size={32} />, title: 'Transport', items: ['All internal transport', 'Group vans between cities', 'Ferries to islands', 'Does NOT include airport arrival/departure'] },
-             { icon: <Utensils className="text-brand-black mb-4" size={32} />, title: 'Tours & Extras', items: ['Floating Village Tour', 'Angkor Wat Tour', 'Bongos Bingo', 'Beach Olympics', 'Caribbean Dinner', 'Sunset Boat Cruise', 'Group leader in every location', 'WhatsApp support group'] }].
+             { icon: <Utensils className="text-brand-black mb-4" size={32} />, title: 'Tours & Extras', items: ['Floating Village Tour', 'Angkor Wat Tour', 'Bongos Bingo', 'Beach Olympics & Volleyball', 'Caribbean Dinner', 'Nestival (beach/jungle rave)', 'Sunset Boat Cruise', 'Pub Quiz', 'Kayak Hire', 'Koh Sdach Loop (e-bike island tour)', 'Group leader in every location', 'WhatsApp support group'] }].
             map((card, i) =>
             <div key={i} className="bg-primary-foreground/5 border border-primary-foreground/10 p-6 rounded-2xl hover:bg-primary-foreground/10 transition-colors">
                 {card.icon}
